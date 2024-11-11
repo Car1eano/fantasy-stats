@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Basketball Stats Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fantasy stats</h1>
+
+    <!-- Dropdown for selecting a specific week -->
+    <label for="weekSelect">Select Week:</label>
+    <select id="weekSelect"; style="font-size: 20px ; width: 100px; height: 50px; text-align: center; line-height: 50px;">
+        <option value="1">Week 1</option>
+        <option value="2">Week 2</option>
+        <option value="3">Week 3</option>
+        <option value="4">Week 4</option>
+        <option value="5">Week 5</option>
+        <option value="6">Week 6</option>
+        <option value="7">Week 7</option>
+        <option value="8">Week 8</option>
+        <option value="9">Week 9</option>
+        <option value="10">Week 10</option>
+        <option value="11">Week 11</option>
+    </select>
+
+    <!--         -->
+    <!-- compare -->
+    <!--         -->
+    <table id="compare"; style="width: 80%; text-align: center">
+            <thead>
+              <tr>
+                <th></th>
+                <th>強盜</th>
+                <th>蹦闆</th>
+                <th>幫我煎</th>
+                <th>APT</th>
+                <th>幫你煎</th>
+                <th>安俞真</th>
+                <th>安叮叮</th>
+                <th>奶昔</th>
+                <th>Xuan</th>
+                <th>金冬天</th>
+                <th>衛冕軍</th>
+                <th>彥廷陳</th>
+                <th>TEAM YOU WIN</th>
+              </tr>
+            </thead>
+
+            <tbody data-week="1">
+                <tr>
+                    <td>強盜</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>蹦闆</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>幫我煎</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>APT</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>幫你煎</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>安俞真</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>安叮叮</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>奶昔</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Xuan</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>金冬天</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>衛冕軍</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>彥廷陳</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                
+            </tbody>
+
+            <tbody data-week="2" style="display: none;">
+                <tr>
+                    <td>強盜</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>蹦闆</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>幫我煎</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>APT</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>幫你煎</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>安俞真</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>安叮叮</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>奶昔</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Xuan</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>金冬天</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>11</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>衛冕軍</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>彥廷陳</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>                
+            </tbody>
+
+            <tbody data-week="3" style="display: none;">
+                <!-- Week 3 data goes here -->
+            </tbody>
+            <tbody data-week="4" style="display: none;">
+                <!-- Week 4 data goes here -->
+            </tbody>
+            <tbody data-week="5" style="display: none;">
+                <!-- Week 5 data goes here -->
+            </tbody>
+            <tbody data-week="6" style="display: none;">
+                <!-- Week 6 data goes here -->
+            </tbody>
+            <tbody data-week="7" style="display: none;">
+                <!-- Week 7 data goes here -->
+            </tbody>
+            <tbody data-week="8" style="display: none;">
+                <!-- Week 8 data goes here -->
+            </tbody>
+            <tbody data-week="9" style="display: none;">
+                <!-- Week 9 data goes here -->
+            </tbody>
+            <tbody data-week="10" style="display: none;">
+                <!-- Week 10 data goes here -->
+            </tbody>
+            <tbody data-week="11" style="display: none;">
+                <!-- Week 11 data goes here -->
+            </tbody>            
+          
+    </table>
+
+    <!--            -->
+    <!-- statsTable -->
+    <!--            -->
+    <table id="statsTable"; style="width: 80%; text-align: center;">
+        <!-- Header Row -->
+        <thead>
+            <tr>
+                <th></th>
+                <th>FGM/A</th>
+                <th>FG%</th>
+                <th>FTM/A</th>
+                <th>FT%</th>
+                <th>3PTM</th>
+                <th>3PTA</th>
+                <th>3PT%</th>
+                <th>PTS</th>
+                <th>REB</th>
+                <th>AST</th>
+                <th>ST</th>
+                <th>BLK</th>
+                <th>TO</th>
+                <th>PF</th>
+                <th>DD</th>
+            </tr>
+        </thead>
+
+        <!-- rows for players -->
+        <tbody data-week="1">
+            <tr>
+                <td>強盜</td>
+                <td>198/424</td> <!-- FGM/A -->
+                <td>0.467</td> <!-- FG% -->
+                <td>117/143</td> <!-- FTM/A -->
+                <td>0.818</td> <!-- FT% -->
+                <td>58</td> <!-- 3PTM -->
+                <td>161</td> <!-- 3PTA -->
+                <td>0.36</td> <!-- 3PT% -->
+                <td>571</td> <!-- PTS -->
+                <td>187</td> <!-- REB -->
+                <td>103</td> <!-- AST -->
+                <td>27</td> <!-- ST -->
+                <td>20</td> <!-- BLK -->
+                <td>72</td> <!-- TO -->
+                <td>67</td> <!-- PF -->
+                <td>8</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>蹦闆</td>
+                <td>230/489</td> <!-- FGM/A -->
+                <td>0.47</td> <!-- FG% -->
+                <td>153/209</td> <!-- FTM/A -->
+                <td>0.732</td> <!-- FT% -->
+                <td>54</td> <!-- 3PTM -->
+                <td>151</td> <!-- 3PTA -->
+                <td>0.358</td> <!-- 3PT% -->
+                <td>667</td> <!-- PTS -->
+                <td>227</td> <!-- REB -->
+                <td>154</td> <!-- AST -->
+                <td>35</td> <!-- ST -->
+                <td>37</td> <!-- BLK -->
+                <td>86</td> <!-- TO -->
+                <td>84</td> <!-- PF -->
+                <td>8</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>幫我煎</td>
+                <td>176/402</td> <!-- FGM/A -->
+                <td>0.438</td> <!-- FG% -->
+                <td>75/89</td> <!-- FTM/A -->
+                <td>0.843</td> <!-- FT% -->
+                <td>57</td> <!-- 3PTM -->
+                <td>180</td> <!-- 3PTA -->
+                <td>0.317</td> <!-- 3PT% -->
+                <td>484</td> <!-- PTS -->
+                <td>163</td> <!-- REB -->
+                <td>110</td> <!-- AST -->
+                <td>38</td> <!-- ST -->
+                <td>19</td> <!-- BLK -->
+                <td>54</td> <!-- TO -->
+                <td>58</td> <!-- PF -->
+                <td>2</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>APT</td>
+                <td>196/404</td> <!-- FGM/A -->
+                <td>0.485</td> <!-- FG% -->
+                <td>110/164</td> <!-- FTM/A -->
+                <td>0.671</td> <!-- FT% -->
+                <td>54</td> <!-- 3PTM -->
+                <td>141</td> <!-- 3PTA -->
+                <td>0.383</td> <!-- 3PT% -->
+                <td>556</td> <!-- PTS -->
+                <td>222</td> <!-- REB -->
+                <td>115</td> <!-- AST -->
+                <td>23</td> <!-- ST -->
+                <td>12</td> <!-- BLK -->
+                <td>67</td> <!-- TO -->
+                <td>88</td> <!-- PF -->
+                <td>9</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>幫你煎</td>
+                <td>182/378</td> <!-- FGM/A -->
+                <td>0.481</td> <!-- FG% -->
+                <td>93/113</td> <!-- FTM/A -->
+                <td>0.823</td> <!-- FT% -->
+                <td>57</td> <!-- 3PTM -->
+                <td>160</td> <!-- 3PTA -->
+                <td>0.356</td> <!-- 3PT% -->
+                <td>514</td> <!-- PTS -->
+                <td>188</td> <!-- REB -->
+                <td>98</td> <!-- AST -->
+                <td>25</td> <!-- ST -->
+                <td>31</td> <!-- BLK -->
+                <td>68</td> <!-- TO -->
+                <td>75</td> <!-- PF -->
+                <td>4</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>安俞真</td>
+                <td>122/264</td> <!-- FGM/A -->
+                <td>0.4621</td> <!-- FG% -->
+                <td>67/81</td> <!-- FTM/A -->
+                <td>0.827</td> <!-- FT% -->
+                <td>46</td> <!-- 3PTM -->
+                <td>118</td> <!-- 3PTA -->
+                <td>0.39</td> <!-- 3PT% -->
+                <td>357</td> <!-- PTS -->
+                <td>114</td> <!-- REB -->
+                <td>64</td> <!-- AST -->
+                <td>37</td> <!-- ST -->
+                <td>18</td> <!-- BLK -->
+                <td>41</td> <!-- TO -->
+                <td>54</td> <!-- PF -->
+                <td>0</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>安叮叮</td>
+                <td>182/394</td> <!-- FGM/A -->
+                <td>0.4619</td> <!-- FG% -->
+                <td>96/120</td> <!-- FTM/A -->
+                <td>0.8</td> <!-- FT% -->
+                <td>53</td> <!-- 3PTM -->
+                <td>139</td> <!-- 3PTA -->
+                <td>0.381</td> <!-- 3PT% -->
+                <td>513</td> <!-- PTS -->
+                <td>214</td> <!-- REB -->
+                <td>120</td> <!-- AST -->
+                <td>35</td> <!-- ST -->
+                <td>21</td> <!-- BLK -->
+                <td>69</td> <!-- TO -->
+                <td>66</td> <!-- PF -->
+                <td>7</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>奶昔</td>
+                <td>213/466</td> <!-- FGM/A -->
+                <td>0.457</td> <!-- FG% -->
+                <td>142/172</td> <!-- FTM/A -->
+                <td>0.826</td> <!-- FT% -->
+                <td>56</td> <!-- 3PTM -->
+                <td>182</td> <!-- 3PTA -->
+                <td>0.308</td> <!-- 3PT% -->
+                <td>624</td> <!-- PTS -->
+                <td>182</td> <!-- REB -->
+                <td>157</td> <!-- AST -->
+                <td>27</td> <!-- ST -->
+                <td>21</td> <!-- BLK -->
+                <td>79</td> <!-- TO -->
+                <td>75</td> <!-- PF -->
+                <td>7</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>Xuan</td>
+                <td>145/327</td> <!-- FGM/A -->
+                <td>0.443</td> <!-- FG% -->
+                <td>82/103</td> <!-- FTM/A -->
+                <td>0.796</td> <!-- FT% -->
+                <td>52</td> <!-- 3PTM -->
+                <td>137</td> <!-- 3PTA -->
+                <td>0.38</td> <!-- 3PT% -->
+                <td>424</td> <!-- PTS -->
+                <td>148</td> <!-- REB -->
+                <td>83</td> <!-- AST -->
+                <td>32</td> <!-- ST -->
+                <td>22</td> <!-- BLK -->
+                <td>53</td> <!-- TO -->
+                <td>65</td> <!-- PF -->
+                <td>3</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>金冬天</td>
+                <td>130/288</td> <!-- FGM/A -->
+                <td>0.451</td> <!-- FG% -->
+                <td>74/90</td> <!-- FTM/A -->
+                <td>0.822</td> <!-- FT% -->
+                <td>28</td> <!-- 3PTM -->
+                <td>88</td> <!-- 3PTA -->
+                <td>0.318</td> <!-- 3PT% -->
+                <td>362</td> <!-- PTS -->
+                <td>156</td> <!-- REB -->
+                <td>97</td> <!-- AST -->
+                <td>22</td> <!-- ST -->
+                <td>25</td> <!-- BLK -->
+                <td>67</td> <!-- TO -->
+                <td>68</td> <!-- PF -->
+                <td>1</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>衛冕軍</td>
+                <td>160/355</td> <!-- FGM/A -->
+                <td>0.451</td> <!-- FG% -->
+                <td>90/119</td> <!-- FTM/A -->
+                <td>0.756</td> <!-- FT% -->
+                <td>63</td> <!-- 3PTM -->
+                <td>178</td> <!-- 3PTA -->
+                <td>0.354</td> <!-- 3PT% -->
+                <td>473</td> <!-- PTS -->
+                <td>156</td> <!-- REB -->
+                <td>95</td> <!-- AST -->
+                <td>32</td> <!-- ST -->
+                <td>31</td> <!-- BLK -->
+                <td>50</td> <!-- TO -->
+                <td>92</td> <!-- PF -->
+                <td>5</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>彥廷陳</td>
+                <td>145/317</td> <!-- FGM/A -->
+                <td>0.457</td> <!-- FG% -->
+                <td>84/107</td> <!-- FTM/A -->
+                <td>0.785</td> <!-- FT% -->
+                <td>58</td> <!-- 3PTM -->
+                <td>146</td> <!-- 3PTA -->
+                <td>0.397</td> <!-- 3PT% -->
+                <td>432</td> <!-- PTS -->
+                <td>135</td> <!-- REB -->
+                <td>75</td> <!-- AST -->
+                <td>24</td> <!-- ST -->
+                <td>12</td> <!-- BLK -->
+                <td>57</td> <!-- TO -->
+                <td>73</td> <!-- PF -->
+                <td>3</td> <!-- DD -->
+            </tr>
+            
+        </tbody>
+
+        <tbody data-week="2" style="display: none;">
+            <tr>
+                <td>強盜</td>
+                <td>253/516</td> <!-- FGM/A -->
+                <td>.490</td> <!-- FG% -->
+                <td>79/97</td> <!-- FTM/A -->
+                <td>.814</td> <!-- FT% -->
+                <td>68</td> <!-- 3PTM -->
+                <td>179</td> <!-- 3PTA -->
+                <td>.380</td> <!-- 3PT% -->
+                <td>653</td> <!-- PTS -->
+                <td>244</td> <!-- REB -->
+                <td>155</td> <!-- AST -->
+                <td>36</td> <!-- ST -->
+                <td>22</td> <!-- BLK -->
+                <td>78</td> <!-- TO -->
+                <td>99</td> <!-- PF -->
+                <td>12</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>蹦闆</td>
+                <td>263/567</td> <!-- FGM/A -->
+                <td>.464</td> <!-- FG% -->
+                <td>143/196</td> <!-- FTM/A -->
+                <td>.730</td> <!-- FT% -->
+                <td>51</td> <!-- 3PTM -->
+                <td>171</td> <!-- 3PTA -->
+                <td>.298</td> <!-- 3PT% -->
+                <td>720</td> <!-- PTS -->
+                <td>318</td> <!-- REB -->
+                <td>177</td> <!-- AST -->
+                <td>30</td> <!-- ST -->
+                <td>32</td> <!-- BLK -->
+                <td>107</td> <!-- TO -->
+                <td>99</td> <!-- PF -->
+                <td>14</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>幫我煎</td>
+                <td>205/446</td> <!-- FGM/A -->
+                <td>.460</td> <!-- FG% -->
+                <td>111/133</td> <!-- FTM/A -->
+                <td>.835</td> <!-- FT% -->
+                <td>63</td> <!-- 3PTM -->
+                <td>178</td> <!-- 3PTA -->
+                <td>.354</td> <!-- 3PT% -->
+                <td>584</td> <!-- PTS -->
+                <td>196</td> <!-- REB -->
+                <td>162</td> <!-- AST -->
+                <td>30</td> <!-- ST -->
+                <td>7</td> <!-- BLK -->
+                <td>66</td> <!-- TO -->
+                <td>82</td> <!-- PF -->
+                <td>4</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>APT</td>
+                <td>260/552</td> <!-- FGM/A -->
+                <td>.471</td> <!-- FG% -->
+                <td>121/163</td> <!-- FTM/A -->
+                <td>.742</td> <!-- FT% -->
+                <td>57</td> <!-- 3PTM -->
+                <td>178</td> <!-- 3PTA -->
+                <td>.320</td> <!-- 3PT% -->
+                <td>698</td> <!-- PTS -->
+                <td>230</td> <!-- REB -->
+                <td>159</td> <!-- AST -->
+                <td>42</td> <!-- ST -->
+                <td>15</td> <!-- BLK -->
+                <td>86</td> <!-- TO -->
+                <td>102</td> <!-- PF -->
+                <td>10</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>幫你煎</td>
+                <td>220/467</td> <!-- FGM/A -->
+                <td>.471</td> <!-- FG% -->
+                <td>57/82</td> <!-- FTM/A -->
+                <td>.695</td> <!-- FT% -->
+                <td>78</td> <!-- 3PTM -->
+                <td>205</td> <!-- 3PTA -->
+                <td>.380</td> <!-- 3PT% -->
+                <td>575</td> <!-- PTS -->
+                <td>200</td> <!-- REB -->
+                <td>95</td> <!-- AST -->
+                <td>35</td> <!-- ST -->
+                <td>32</td> <!-- BLK -->
+                <td>76</td> <!-- TO -->
+                <td>83</td> <!-- PF -->
+                <td>2</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>安俞真</td>
+                <td>172/364</td> <!-- FGM/A -->
+                <td>.473</td> <!-- FG% -->
+                <td>71/88</td> <!-- FTM/A -->
+                <td>.807</td> <!-- FT% -->
+                <td>53</td> <!-- 3PTM -->
+                <td>159</td> <!-- 3PTA -->
+                <td>.333</td> <!-- 3PT% -->
+                <td>468</td> <!-- PTS -->
+                <td>168</td> <!-- REB -->
+                <td>102</td> <!-- AST -->
+                <td>44</td> <!-- ST -->
+                <td>37</td> <!-- BLK -->
+                <td>61</td> <!-- TO -->
+                <td>65</td> <!-- PF -->
+                <td>3</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>安叮叮</td>
+                <td>248/518</td> <!-- FGM/A -->
+                <td>.479</td> <!-- FG% -->
+                <td>114/145</td> <!-- FTM/A -->
+                <td>.786</td> <!-- FT% -->
+                <td>69</td> <!-- 3PTM -->
+                <td>165</td> <!-- 3PTA -->
+                <td>.418</td> <!-- 3PT% -->
+                <td>679</td> <!-- PTS -->
+                <td>282</td> <!-- REB -->
+                <td>148</td> <!-- AST -->
+                <td>40</td> <!-- ST -->
+                <td>22</td> <!-- BLK -->
+                <td>77</td> <!-- TO -->
+                <td>91</td> <!-- PF -->
+                <td>12</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>奶昔</td>
+                <td>238/500</td> <!-- FGM/A -->
+                <td>.476</td> <!-- FG% -->
+                <td>96/119</td> <!-- FTM/A -->
+                <td>.807</td> <!-- FT% -->
+                <td>89</td> <!-- 3PTM -->
+                <td>223</td> <!-- 3PTA -->
+                <td>.399</td> <!-- 3PT% -->
+                <td>661</td> <!-- PTS -->
+                <td>223</td> <!-- REB -->
+                <td>195</td> <!-- AST -->
+                <td>45</td> <!-- ST -->
+                <td>22</td> <!-- BLK -->
+                <td>76</td> <!-- TO -->
+                <td>86</td> <!-- PF -->
+                <td>11</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>Xuan</td>
+                <td>215/464</td> <!-- FGM/A -->
+                <td>.463</td> <!-- FG% -->
+                <td>98/120</td> <!-- FTM/A -->
+                <td>.817</td> <!-- FT% -->
+                <td>76</td> <!-- 3PTM -->
+                <td>209</td> <!-- 3PTA -->
+                <td>.364</td> <!-- 3PT% -->
+                <td>604</td> <!-- PTS -->
+                <td>186</td> <!-- REB -->
+                <td>100</td> <!-- AST -->
+                <td>33</td> <!-- ST -->
+                <td>20</td> <!-- BLK -->
+                <td>60</td> <!-- TO -->
+                <td>81</td> <!-- PF -->
+                <td>5</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>金冬天</td>
+                <td>268/523</td> <!-- FGM/A -->
+                <td>.512</td> <!-- FG% -->
+                <td>116/136</td> <!-- FTM/A -->
+                <td>.853</td> <!-- FT% -->
+                <td>70</td> <!-- 3PTM -->
+                <td>164</td> <!-- 3PTA -->
+                <td>.427</td> <!-- 3PT% -->
+                <td>722</td> <!-- PTS -->
+                <td>285</td> <!-- REB -->
+                <td>206</td> <!-- AST -->
+                <td>43</td> <!-- ST -->
+                <td>30</td> <!-- BLK -->
+                <td>73</td> <!-- TO -->
+                <td>97</td> <!-- PF -->
+                <td>15</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>衛冕軍</td>
+                <td>231/521</td> <!-- FGM/A -->
+                <td>.443</td> <!-- FG% -->
+                <td>151/183</td> <!-- FTM/A -->
+                <td>.825</td> <!-- FT% -->
+                <td>78</td> <!-- 3PTM -->
+                <td>243</td> <!-- 3PTA -->
+                <td>.321</td> <!-- 3PT% -->
+                <td>691</td> <!-- PTS -->
+                <td>198</td> <!-- REB -->
+                <td>124</td> <!-- AST -->
+                <td>37</td> <!-- ST -->
+                <td>22</td> <!-- BLK -->
+                <td>65</td> <!-- TO -->
+                <td>96</td> <!-- PF -->
+                <td>5</td> <!-- DD -->
+            </tr>
+            <tr>
+                <td>彥廷陳</td>
+                <td>197/468</td> <!-- FGM/A -->
+                <td>.421</td> <!-- FG% -->
+                <td>87/118</td> <!-- FTM/A -->
+                <td>.737</td> <!-- FT% -->
+                <td>75</td> <!-- 3PTM -->
+                <td>222</td> <!-- 3PTA -->
+                <td>.338</td> <!-- 3PT% -->
+                <td>556</td> <!-- PTS -->
+                <td>232</td> <!-- REB -->
+                <td>135</td> <!-- AST -->
+                <td>39</td> <!-- ST -->
+                <td>17</td> <!-- BLK -->
+                <td>69</td> <!-- TO -->
+                <td>91</td> <!-- PF -->
+                <td>3</td> <!-- DD -->
+            </tr>  
+        </tbody>
+
+        <tbody data-week="3" style="display: none;">
+        </tbody>
+
+        <tbody data-week="4" style="display: none;">
+        </tbody>
+
+        <tbody data-week="5" style="display: none;">
+        </tbody>
+
+        <tbody data-week="6" style="display: none;">
+        </tbody>
+
+        <tbody data-week="7" style="display: none;">
+        </tbody>
+
+        <tbody data-week="8" style="display: none;">
+        </tbody>
+
+        <tbody data-week="9" style="display: none;">
+        </tbody>
+
+        <tbody data-week="10" style="display: none;">
+        </tbody>
+
+        <tbody data-week="11" style="display: none;">
+        </tbody>
+
+    </table>
+
+    <script>
+        document.getElementById('weekSelect').addEventListener('change', function() {
+            const selectedWeek = this.value;
+
+            // Show or hide player rows based on selected week
+            const rows = document.querySelectorAll('tbody');
+            rows.forEach(row => {
+                if (row.getAttribute('data-week') === selectedWeek) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
